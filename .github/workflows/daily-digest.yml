@@ -3,9 +3,13 @@ name: Daily AI News Digest
 # Maps to the original n8n "Schedule Trigger" node (cron 0 8 * * *).
 # 05:00 UTC = 08:00 Europe/Istanbul (UTC+3, no DST, so this doesn't drift
 # across the year). Also runnable on demand via workflow_dispatch.
+#
+# TEMP (2026-08-15): moved to 13:05 UTC (16:05 TR) for a one-off
+# end-to-end verification of the real cron trigger (not workflow_dispatch).
+# Revert to "0 5 * * *" — or remove the schedule entirely — right after.
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "5 13 * * *"
   workflow_dispatch: {}
 
 jobs:
