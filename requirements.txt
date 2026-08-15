@@ -1,0 +1,6 @@
+requests==2.34.2
+feedparser==6.0.14
+python-dotenv==1.2.2
+anthropic==0.122.0
+langfuse==4.14.4
+json-repair==0.63.2
